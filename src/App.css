@@ -1,38 +1,56 @@
 .App {
   text-align: center;
+  /* background-image: url("./assets/images/allison_gr22_1200.jpg");
+  
+  height: 100vh; */
+  /* width: 100vw; */
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden !important;
+  
+  background-image: url("./assets/images/allison_gr22_1200.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #3E3E42;
+}
+p {
+  font-family: "BitterLight";
+  color: #E7E1D5;
+}
+h1 {
+  font-family: "BitterMedium";
+  color: #E7E1D5;
+  letter-spacing: 3px;
+  
+}
+.text {
+margin-top: 26em;
+margin-bottom: 2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  font-family: "BitterMedium";
+  font-size: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark {
+  color: #E7E1D5;
+  background-color: #000;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flashyBtn {
+  border: 0px;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.light {
+  color: #000;
+  background-color: #E7E1D5;
 }
+@media screen and (min-width: 480px) {
+  .text {
+    margin-top: 6em;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    }
 }

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [light, setLight] = useState(false);
+
+  setTimeout(() => {
+    light ? setLight(false) : setLight(true);
+  }, 1000)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <div className='background'  alt="brooches by fran allison">
+        {/* <h1>Fran Allison</h1> */}
+        <div className='text'>
+          <p>This site is under construction.</p>
+          <p>In the meantime, </p> 
+          </div>
+          <a className={`flashyBtn ${light ? "light" : "dark"}`} href="mailto:fran.a@xtra.co.nz?subject=Website enquiry" target="_blank" rel="noreferrer">Contact Me</a>
+        
+        
+      </div>
     </div>
   );
 }
